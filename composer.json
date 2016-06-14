@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phplegends/collections": "1.*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "PHPLegends\\Session\\" : "src"
+        }
+    }
+}

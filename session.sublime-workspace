@@ -1,0 +1,2903 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"data",
+				"data_solicitacao_br"
+			],
+			[
+				"status",
+				"statusDivergente"
+			],
+			[
+				"array_col",
+				"array_collection"
+			],
+			[
+				"tipo_",
+				"tipo_entrega_id"
+			],
+			[
+				"Expe",
+				"Expedicao	Expedicao"
+			],
+			[
+				"Pro",
+				"Produções"
+			],
+			[
+				"btn-",
+				"btn-primary"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"cl",
+				"class	class …"
+			],
+			[
+				"wgm",
+				"wgmModal	var"
+			],
+			[
+				"IW",
+				"IWgmModal	interface"
+			],
+			[
+				"Iw",
+				"IWmgAlert	interface"
+			],
+			[
+				"const",
+				"constructor	keyword"
+			],
+			[
+				"w",
+				"wgmModal"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"ca",
+				"callbackSearch"
+			],
+			[
+				"dro",
+				"dropForeign('grupos_grupo_principal_id_foreign"
+			],
+			[
+				"grup",
+				"grupo_principal_id"
+			],
+			[
+				"font_",
+				"fonte_cliente_id"
+			],
+			[
+				"grupo",
+				"$grupo_principal_id〔variable〕"
+			],
+			[
+				"coun",
+				"counts"
+			],
+			[
+				"assert",
+				"assertFalse"
+			],
+			[
+				"set",
+				"setFieldIndex〔function〕"
+			],
+			[
+				"get",
+				"getDirectionIndex()	mixed"
+			],
+			[
+				"cliente",
+				"cliente_nome"
+			],
+			[
+				"orderB",
+				"orderBySorter"
+			],
+			[
+				"So",
+				"Sorter"
+			],
+			[
+				"getDirec",
+				"getDirectionIndex〔function〕"
+			],
+			[
+				"getC",
+				"getCurrentField〔function〕"
+			],
+			[
+				"__",
+				"__order__"
+			],
+			[
+				"class_",
+				"class_implements〔function〕"
+			],
+			[
+				"H",
+				"HtmlBuilder"
+			],
+			[
+				"pub",
+				"$publishedConfig〔variable〕"
+			],
+			[
+				"getD",
+				"getDirectionIndex"
+			],
+			[
+				"setDirec",
+				"setDirectionIndex〔function〕"
+			],
+			[
+				"direction",
+				"$directionIndex〔variable〕"
+			],
+			[
+				"pr",
+				"protected"
+			],
+			[
+				"cn",
+				"config"
+			],
+			[
+				"regist",
+				"registryMacros"
+			],
+			[
+				"html",
+				"htmlSorter"
+			],
+			[
+				"accepte",
+				"acceptedFields"
+			],
+			[
+				"direct",
+				"directionIndex"
+			],
+			[
+				"setitem",
+				"setItem〔function〕"
+			],
+			[
+				"_os",
+				"_os_status"
+			],
+			[
+				"us",
+				"unsignedInteger"
+			],
+			[
+				"check",
+				"$checkForStatus〔variable〕"
+			],
+			[
+				"gr",
+				"grupo_id"
+			],
+			[
+				"func_ge",
+				"func_get_args〔function〕"
+			],
+			[
+				"fact",
+				"factory"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"clien",
+				"cliente_cnpj"
+			],
+			[
+				"enclos",
+				"enclosured_when"
+			],
+			[
+				"call",
+				"callable"
+			],
+			[
+				"func",
+				"$function〔variable〕"
+			],
+			[
+				"usuar",
+				"usuario_id"
+			],
+			[
+				"callba",
+				"$callback〔variable〕"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"num",
+				"numero_os"
+			],
+			[
+				"col-",
+				"col-xs-6"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"boot",
+				"bootViewData"
+			],
+			[
+				"get_class",
+				"get_class_methods〔function〕"
+			],
+			[
+				"Venda",
+				"VendaController@getIndex"
+			],
+			[
+				"Sis",
+				"Sistemas"
+			],
+			[
+				"prod",
+				"$produto_id〔variable〕"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"pro",
+				"produtos"
+			],
+			[
+				"ul",
+				"ultimo_link"
+			],
+			[
+				"permi",
+				"permissao"
+			],
+			[
+				"permiss",
+				"$permissoes〔variable〕"
+			],
+			[
+				"met",
+				"$method〔variable〕"
+			],
+			[
+				"me",
+				"$method〔variable〕"
+			],
+			[
+				"Reflec",
+				"ReflectionMethod"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"rou",
+				"$routables〔variable〕"
+			],
+			[
+				"controller",
+				"$controller〔variable〕"
+			],
+			[
+				"C",
+				"ControllerInspector〔class〕"
+			],
+			[
+				"get_class_",
+				"get_class_vars〔function〕"
+			],
+			[
+				"FILTER_VALIDA",
+				"FILTER_VALIDATE_INT〔constant〕"
+			],
+			[
+				"remes",
+				"remessa_id"
+			],
+			[
+				"FILTERVA",
+				"FILTER_VALIDATE_EMAIL"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"stat",
+				"statusID"
+			],
+			[
+				"sol",
+				"solicitacoes"
+			],
+			[
+				"instui",
+				"instituicao_id"
+			],
+			[
+				"dados",
+				"$dadosAluno〔variable〕"
+			],
+			[
+				"insti",
+				"instituicao_id"
+			],
+			[
+				"only",
+				"onlyErrors"
+			],
+			[
+				"lista",
+				"listaStatus"
+			],
+			[
+				"write",
+				"writeln〔function〕"
+			],
+			[
+				"codi",
+				"codigoChip"
+			],
+			[
+				"institu",
+				"$instituicaoID〔variable〕"
+			],
+			[
+				"instit",
+				"instituicao_id"
+			],
+			[
+				"status_",
+				"status_atual_id"
+			],
+			[
+				"REmes",
+				"RemessaStatus"
+			],
+			[
+				"soli",
+				"solicitacao"
+			],
+			[
+				"campo",
+				"$campo_periodo〔variable〕"
+			],
+			[
+				"In",
+				"Input"
+			],
+			[
+				"be",
+				"betweenDate"
+			],
+			[
+				"ini",
+				"$inicio〔variable〕"
+			],
+			[
+				"data_",
+				"data_fim"
+			],
+			[
+				"usu",
+				"usuario_id"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			],
+			[
+				"Guz",
+				"GuzzleServerException"
+			],
+			[
+				"dado",
+				"dadoComplementar"
+			],
+			[
+				"inst",
+				"instituicao_id"
+			],
+			[
+				"exce",
+				"exception"
+			],
+			[
+				"acumul",
+				"acumulaNome"
+			],
+			[
+				"van",
+				"vantagensSection"
+			],
+			[
+				"vantage",
+				"vantagensSection"
+			],
+			[
+				"vantagens",
+				"vantagensIds"
+			],
+			[
+				"desta",
+				"destaques"
+			],
+			[
+				"isObje",
+				"isPlainObject〔function〕"
+			],
+			[
+				"inp",
+				"inputPostTitle"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"remove",
+				"removeAttr〔function〕"
+			],
+			[
+				"no",
+				"nomefantasia"
+			],
+			[
+				"empresa",
+				"empresa_id"
+			],
+			[
+				"emp",
+				"empresa_id"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"regis",
+				"registryNamespace"
+			],
+			[
+				"modal",
+				"modalInLoadProtocol"
+			],
+			[
+				"box",
+				"boxShadow"
+			],
+			[
+				"g",
+				"gulp"
+			],
+			[
+				"cache",
+				"cacheEnabled"
+			],
+			[
+				"save",
+				"saveCompiled"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/SessionInterface.php",
+			"settings":
+			{
+				"buffer_size": 308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Session.php",
+			"settings":
+			{
+				"buffer_size": 825,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"MINIFY JS",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"MINIFY JS",
+				""
+			]
+		],
+		[
+			[
+				[
+					"MINIFY JS",
+					""
+				],
+				[
+					"Packages/YUI Compressor/YUI Compressor.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/YUI Compressor/YUI Compressor.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Ant Buildfile/Ant Buildfile.sublime-build",
+					""
+				],
+				[
+					"Packages/Bash Build System/Bash.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Bash Build System/Bash.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Ant Buildfile/Ant Buildfile.sublime-build",
+					""
+				],
+				[
+					"Packages/YUI Compressor/YUI Compressor.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/YUI Compressor/YUI Compressor.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					""
+				],
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					""
+				],
+				[
+					"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/Ant.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/Ant Buildfile/Ant Buildfile.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/Ant.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Markdown Preview/Markdown.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/YUI Compressor/YUI Compressor.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/YUI Compressor/YUI Compressor.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Ant Buildfile/Ant Buildfile.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SASS Build/SASS - Compressed.sublime-build",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SASS Build/SASS.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/TypeScript/TypeScript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/TypeScript/TypeScript.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/YUI Compressor/YUI Compressor.sublime-build",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/YUI Compressor/YUI Compressor.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"YUI Compressor",
+					""
+				],
+				[
+					"Packages/User/lua.sublime-build",
+					""
+				]
+			],
+			[
+				"YUI Compressor",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git commit ",
+				"Git: Quick Commit"
+			],
+			[
+				"scan",
+				"PHPIntel: Scan Project"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"coffee",
+				"Coffee: Compile File"
+			],
+			[
+				"updage",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"reiden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"ig",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"generate",
+				"Generate Getter for ..."
+			],
+			[
+				"GETETR",
+				"Generate Getter and Setter for ..."
+			],
+			[
+				"getter",
+				"Generate Getter and Setter for ..."
+			],
+			[
+				"ge",
+				"Generate Getter and Setter for ..."
+			],
+			[
+				"genera",
+				"PHP: Generate Getters"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"update",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"CODEBEA",
+				"PHP CodeBeautifier"
+			],
+			[
+				"php ide",
+				"PHP CodeBeautifier"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"php for",
+				"PHPSimpleRefactor: extract current lines to method"
+			],
+			[
+				"ignore",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"php ge",
+				"PHP: Generate Getters"
+			],
+			[
+				"log",
+				"Set Syntax: LaTeX Log"
+			],
+			[
+				"cron",
+				"Set Syntax: Crontab"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"jpg",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"logf",
+				"Set Syntax: Logfile"
+			],
+			[
+				"logfile",
+				"Set Syntax: Logfile"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bash",
+				"SublimeLinter: Clear Color Scheme Folder"
+			],
+			[
+				"git ign",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"git igno",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"css comple",
+				"CSS Completions: Delete Cache"
+			],
+			[
+				"csscom",
+				"CSS Completions: Prune Cache"
+			],
+			[
+				"compress",
+				"Snippet: reset_doc_compressed"
+			],
+			[
+				"css3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"coffee li",
+				"Coffee: Lint"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS3"
+			],
+			[
+				"install g",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"gulp",
+				"Set Syntax: Gulp results"
+			],
+			[
+				"gupl",
+				"Gulp: Show panel"
+			],
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"md",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"theme",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"xpath",
+				"XPath: Goto open tag"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"new ",
+				"Build: New Build System"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript (Angular.js)"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"jinj",
+				"Set Syntax: Jinja2"
+			],
+			[
+				"jsn",
+				"Set Syntax: JSON"
+			],
+			[
+				"yui",
+				"Build With: YUI Compressor"
+			],
+			[
+				"mi",
+				"Minify Javascript"
+			],
+			[
+				"min",
+				"Minify Javascript"
+			],
+			[
+				"hs",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"sublimep",
+				"SublimeLinter: Previous Error"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Enable Linting"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"IDENT",
+				"Indent XML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"jsli",
+				"Build With: JSLint"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"jslin",
+				"JSLint"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime li",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"sublime en",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"",
+				"Build: New Build System"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"text",
+				"Set Syntax: Textile"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"css3e",
+				"CSS3: Validate"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"CSS3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"undes",
+				"Set Syntax: HTML (Underscore)"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"inja",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"jinja",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"linter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"run",
+				"Permute Lines: Unique"
+			],
+			[
+				"c3",
+				"CSS3: Validate"
+			],
+			[
+				"cs3",
+				"CSS3: Validate"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"color sche",
+				"SublimeLinter: Clear Color Scheme Folder"
+			],
+			[
+				"show all",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"limit mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"linter disable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"xss3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"android",
+				"Import Android Classes"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"ant",
+				"Set Syntax: Ant"
+			],
+			[
+				"jin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"ini file",
+				"File: New View into File"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"jsl",
+				"JSLint"
+			],
+			[
+				"all",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"all err",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"error",
+				"SublimeLinter: Show Errors on Save"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"csslin",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"csslint",
+				"Preferences: CSSLint Settings – Default"
+			],
+			[
+				"build",
+				"Set Syntax: NAnt Build File"
+			]
+		],
+		"width": 667.0
+	},
+	"console":
+	{
+		"height": 155.0,
+		"history":
+		[
+			"b",
+			"b.strip('W')",
+			"b = \"Wallace\"",
+			"\"\\tx\".strip()",
+			"\"\\tx\"",
+			"\"asdasd asdasd asdasd as\".strip().__len__()",
+			"\"\".strip().__len__()",
+			"\"\".strip().__len__",
+			"\"\".strip().len",
+			"\"\".strip()",
+			"\" asdasdasdas \".strip()",
+			"\" asdasdasdas \".strip",
+			"\" asdasdasdas \".strio",
+			"print(dir(a))",
+			"dir(str)",
+			"str",
+			"dir(a)",
+			"trim",
+			"a.trim",
+			"a",
+			"a = \"Z\"",
+			"a = \"x\"",
+			"\"x\"·trim",
+			"''·trim",
+			"''",
+			"view.run_command('sort_lines_size')",
+			"view.run_command('sortLinesSize')",
+			"view.run_command('sortlinessize')",
+			"view.run_command('example')",
+			"filter(lambda x: x, x)",
+			"filter(lambda x: x)",
+			"filter(x, lambda x: x)",
+			"filter(x)",
+			"x.map",
+			"x",
+			"x.filter()",
+			"x = [1, 2, 3, 4, None]",
+			"view.run_command('example')",
+			"'v'.join(['1', '2', '3'])",
+			"'v'.join('x', ['1', '2', '3'])",
+			"''.join('x', ['1', '2', '3'])",
+			"','.join(['1', '2', '3'])",
+			"','.join([1, 2, 3])",
+			"','.join([1, 2,3])",
+			"dir([1, 2, 3])",
+			"[1, 2, 3].glue",
+			"[1, 2, 3].join",
+			"view.run_command('example')",
+			"view.replace()",
+			"view.replace(edit=1)",
+			"view.replace()",
+			"view.replace",
+			"print( dir(view.replace))",
+			"print( view.replace)",
+			"print( view.replace.__doc__)",
+			"print view.replace.__doc__",
+			"view.replace.__doc__",
+			"view.replace.__help__",
+			"view.__doc__",
+			"view.replace.__doc__",
+			"view.replace",
+			"view.replace.__doc__",
+			"view.replace",
+			"view.run_command('example')",
+			"a[0]",
+			"a[1]",
+			"a = (1, 2,)",
+			"view.run_command('example')",
+			"view.run_command('x')",
+			"view.run_command()",
+			"b",
+			"b.sort(key=lambda x: -len(x))",
+			"b",
+			"b.sort(key=lambda x:len(x))",
+			"b.sort(key=lambda x:len(x)",
+			"b = [\"teste\", \"x\", 'xxx']",
+			"b[\"teste\", \"x\", 'xxx']",
+			"b.sort(key=lambda x: len(str(x)))",
+			"b",
+			"b.sort(key=lambda x: len(str(x)))",
+			"b.sort(key=lambda x: len(str(x))",
+			"b.sort(key=lambda x: len(x))",
+			"b",
+			"bb",
+			"b.sort(key=lambda x: x - 1)",
+			"b",
+			"b.sort(key=lambda x: x < 5)",
+			"b",
+			"b.sort(key=lambda x: x > 5)",
+			"print(a)",
+			"a()",
+			"a",
+			"a= b.sort(key=lambda x: x > 5)",
+			"b",
+			"b.sort(key=lambda x: x > 5)",
+			"b",
+			"b.sort(key=lambda x: x-x)",
+			"b = [1, 2, 3, 5]",
+			"print(b)",
+			"b",
+			"b = [1, 2, 3, 4].sort(key=lambda x: -x)",
+			"[1, 2, 3, 4].sort(key=lambda x: -x)",
+			"[3, 2 3, 4].sort(key = lambda x:x - x)",
+			"[3, 2 3, 4].sort(key = lambda x : x - x)",
+			"[3, 2, 3, 4].sort(key= lambda x : x + x)",
+			"[3, 2, 3, 4].sort(key= lambda x:x)",
+			"[3, 2, 3, 4].sort(key= lambda -1)",
+			"[3, 2, 3, 4].sort(key=-1)",
+			"[3, 2, 3, 4].sort(key=None)",
+			"[3, 2, 3, 4].sort(key=Nome)",
+			"list.sort.__doc__",
+			"list.sort",
+			"list",
+			"[3, 2, 3, 4].sort(cmp=lambda x: x * 3 )",
+			"[3, 2, 3, 4].sort(key=lambda x: x * 3 )",
+			"[3, 2, 3, 4].sort(val=lambda x: x * 3 )",
+			"[3, 2, 3, 4].sort(key=lambda x: x )",
+			"[3, 2, 3, 4].sort(val=lambda x: x )",
+			"[3, 2, 3, 4].sort(value=lambda x: x )",
+			"[3, 2, 3, 4].sort(x=lambda x: x )",
+			"[3, 2, 3, 4].sort(key=lambda x: x > 0)",
+			"[3, 2, 3, 4].sort(key=lambda x: x)",
+			"[3, 2, 3, 4].sort(key=lambda x: 1)",
+			"[3, 2, 3, 4].sort(key=lambda x: -x)",
+			"[1, 2, 3, 4].sort(key=lambda x: -x)",
+			"[1, 2, 3, 4].sort(key=lambda x: x)",
+			"[1, 2, 3, 4].sort(key=lambda x: 1)",
+			"[1, 2, 3, 4].sort(key=lambda x: x - 1)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/packages/session",
+		"/var/www/packages/session/src"
+	],
+	"file_history":
+	[
+		"/var/www/packages/session/src/Storage.php",
+		"/var/www/packages/session/vendor/phplegends/collections/src/Collection.php",
+		"/var/www/packages/session/vendor/phplegends/collections/src/ListCollection.php",
+		"/var/www/packages/session/src/SessionInterface.php",
+		"/var/www/sistemageral/resources/views/temp/os/_form.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/editar.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/liberacao_financeira.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/liberado_producao.blade.php",
+		"/var/www/sistemageral/deploy.php",
+		"/var/www/sistemageral/resources/views/temp/os/layout.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/criar.blade.php",
+		"/var/www/sistemageral/app/Sistemas/SistemaInterface.php",
+		"/var/www/sistemageral/app/Sistemas/SistemaAbstrato.php",
+		"/var/www/sistemageral/app/Sistemas/Avancar.php",
+		"/var/www/sistemageral/resources/views/temp/os/divergentes.blade.php",
+		"/var/www/sistemageral/app/Http/Controllers/Temp/OsController.php",
+		"/var/www/sistemageral/app/Http/Controllers/Auth/AuthController.php",
+		"/var/www/sistemageral/app/Models/Usuario.php",
+		"/var/www/sistemageral/app/Http/Controllers/UsuarioController.php",
+		"/var/www/sistemageral/database/migrations/2016_06_13_135314_insert_rotas__temp_os_divergentes.php",
+		"/var/www/sistemageral/resources/views/temp/os/aguardando_impressao.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/expedicao.blade.php",
+		"/var/www/sistemageral/resources/views/temp/os/index.blade.php",
+		"/var/www/sistemageral/app/Models/Temp/Os.php",
+		"/var/www/sistemageral/public/js/temp/os/expedicao.js",
+		"/var/www/sistemageral/public/css/temp/os/default.css",
+		"/var/www/sistemageral/resources/views/temp/os/impressao.blade.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/src/Sorter.php",
+		"/var/www/sistemageral/vendor/laravelcollective/html/src/HtmlBuilder.php",
+		"/var/www/sistemageral/app/Models/Temp/OsStatus.php",
+		"/var/www/sistemageral/app/Http/local_routes.php",
+		"/var/www/sistemageral/resources/views/temp/os/entregues.blade.php",
+		"/var/www/sistemageral/config/session.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/config/config.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Redis/Database.php",
+		"/var/www/sistemageral/config/app.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/contracts/Redis/Database.php",
+		"/var/www/sistemageral/sistemageral.sublime-project",
+		"/var/www/sistemageral/config/cache.php",
+		"/var/www/sistemageral/composer.json",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/support/Facades/Redis.php",
+		"/var/www/sistemageral/.env",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/support/Facades/Session.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/session/SessionManager.php",
+		"/var/www/sistemageral/database/migrations/2016_05_24_153907_alter_os.php",
+		"/var/www/sistemageral/database/migrations/2016_06_09_174008_alter_table_orcamentos.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php",
+		"/var/www/sistemageral/database/migrations/2016_06_09_165428_alter_table_orcamento.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/support/Facades/Schema.php",
+		"/var/www/sistemageral/database/migrations/2016_06_09_163509_insert_rotas_orcamentos.php",
+		"/var/www/sistemageral/database/migrations/2016_06_13_084417_insert_rotas__temp_os_entregas.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php",
+		"/var/www/sistemageral/database/migrations/2016_06_10_103021_insert_inicial__tipos_entrega.php",
+		"/var/www/sistemageral/app/Models/Temp/TipoEntrega.php",
+		"/var/www/sistemageral/database/migrations/2016_06_08_100636_insert_tipos_entregas.php",
+		"/var/www/sistemageral/app/Models/TipoEntrega.php",
+		"/var/www/sistemageral/vendor/mikehaertl/phpwkhtmltopdf/WkHtmlToPdf.php",
+		"/var/www/sistemageral/script.php",
+		"/var/www/sistemageral/app/Providers/AppServiceProvider.php",
+		"/var/www/sistemageral/resources/views/temp/os/_form_search.blade.php",
+		"/var/www/sistemageral/scr",
+		"/var/www/sistemageral/database/migrations/2016_06_10_102123_create_table__tipos_entrega.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidationException.php",
+		"/var/www/sistemageral/app/Models/Temp/Expedicao.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
+		"/var/www/sistemageral/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Validation/ValidatesWhenResolvedTrait.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+		"/var/www/sistemageral/public/js/temp/os/expedicao.ts",
+		"/var/www/sistemageral/public/js/wgm-modal.js",
+		"/var/www/sistemageral/resources/views/temp/os/_botao_mudar_status.blade.php",
+		"/var/www/sistemageral/database/migrations/2016_06_10_104701_insert_rota_temp_post_Ajax_status_entregue.php",
+		"/var/www/sistemageral/database/migrations/2016_06_10_093627_insert_rota_temp_os_expedicao.php",
+		"/var/www/sistemageral/app/Models/Grupo.php",
+		"/var/www/sistemageral/database/migrations/2016_06_10_102506_fk_table__expedicoes.php",
+		"/var/www/sistemageral/database/migrations/2016_06_10_102143_create_table__expedicoes.php",
+		"/var/www/sistemageral/database/migrations/2016_05_25_110848_insert-_os-status.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/routing/Middleware/ThrottleRequests.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Cache/RateLimiter.php",
+		"/var/www/sistemageral/app/Models/Rota.php",
+		"/var/www/sistemageral/database/migrations/2016_06_09_091308_insert_rota_divergentes.php",
+		"/var/www/sistemageral/resources/views/temp/os/_aba.blade.php",
+		"/home/wallace/Área de Trabalho/una.doc",
+		"/var/www/sistemageral/public/js/temp/os/liberado_producao.js",
+		"/var/www/sistemageral/app/Http/Controllers/OsController.php",
+		"/home/wallace/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/var/www/sistemageral/database/migrations/2016_06_09_105747_alter_table__os_status.php",
+		"/var/www/sistemageral/database/migrations/2016_06_08_112342_insert_produtos.php",
+		"/var/www/sistemageral/database/migrations/2016_05_20_113033_create_logs_lancamentos_table.php",
+		"/var/www/sistemageral/database/migrations/2016_06_06_171727_alter_table_cliente.php",
+		"/var/www/sistemageral/public/js/temp/os/liberado_producao.min.js",
+		"/var/www/sistemageral/public/js/temp/os/liberado_producao.ts",
+		"/var/www/sistemageral/public/js/jquery.d.ts",
+		"/var/www/sistemageral/public/js/wgm-modal.d.ts",
+		"/var/www/sistemageral/public/js/jquery.ts",
+		"/var/www/sistemageral/public/js/wgm-modal.ts",
+		"/var/www/sistemageral/public/js/jquery.js",
+		"/var/www/sistemageral/public/js/app.js",
+		"/home/wallace/.bash_aliases",
+		"/home/wallace/.bashrc",
+		"/var/www/sistemageral/public/js/temp/os/liberado_producao.coffee",
+		"/var/www/sistemageral/resources/views/layouts/default.blade.php",
+		"/var/www/sistemageral/.gitignore",
+		"/var/www/sistemageral/gulpfile.js",
+		"/var/www/sistemageral/node_modules/laravel-elixir/node_modules/gulp-coffee/node_modules/.bin/coffee",
+		"/var/www/sistemageral/.gitattributes",
+		"/var/www/sistemageral/resources/assets/coffee/temp/os/liberado_producao.coffee",
+		"/var/www/sistemageral/public/js/temp/os/_botao_mudar_status.js",
+		"/var/www/sistemageral/database/migrations/2016_06_08_153059_insert_temp_rota_divergencia.php",
+		"/var/www/sistemageral/database/migrations/2016_06_08_153851_insert_novo_status_divergencia.php",
+		"/var/www/sistemageral/app/Models/OsStatus.php",
+		"/var/www/sistemageral/app/Models/Temp/Status.php",
+		"/var/www/sistemageral/database/migrations/2016_06_08_145808_insert_post_status_experidao__rota_temp_os.php",
+		"/var/www/sistemageral/database/migrations/2016_06_08_113430_insert_rotas_temp_os_producao_liberado_producao.php",
+		"/var/www/sistemageral/dev/_laravel-sorter/vendor/illuminate/view/ViewServiceProvider.php",
+		"/var/www/sistemageral/resources/views/_debug/layout.blade.php",
+		"/var/www/sistemageral/public/font-awesome-4.6.1/scss/_rotated-flipped.scss",
+		"/var/www/sistemageral/database/migrations/2016_06_02_100702_inserir_rotas_temp_os_producao.php",
+		"/var/www/sistemageral/database/migrations/2016_06_06_154938_insert_grupo_catalogo.php",
+		"/var/www/sistemageral/database/migrations/2016_06_01_115304_insert_rota_salvar_carga.php",
+		"/var/www/sistemageral/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/var/www/sistemageral/database/migrations",
+			"/var/www/sistemageral",
+			"/var/www/sistemageral/app",
+			"/var/www/unabh/vendor",
+			"/var/www/unabh/app",
+			"/var/www/unabh",
+			"/var/www/cv",
+			"/var/www/unibh",
+			"/var/www/cv",
+			"/var/www/php7/src",
+			"/var/www/unabh/public/css",
+			"/var/www/lab/time",
+			"/var/www/cv/",
+			"/var/www/cv/application",
+			"/var/www/cv/",
+			"/var/www/cv/laravel",
+			"/var/www/cv/application",
+			"/var/www/cv/",
+			"/var/www/cv/application",
+			"/var/www/cv",
+			"/var/www/laralab/vendor",
+			"/var/www/cv",
+			"/var/www/np",
+			"/var/www/uniselo",
+			"/var/www/lab/anima",
+			"/var/www/cv",
+			"/var/www/uniselo",
+			"/var/www/cv/laravel",
+			"/var/www/cv/",
+			"/var/www/cv/laravel",
+			"/var/www/cv/laravel/database",
+			"/var/www/cv/laravel",
+			"/var/www/cv/",
+			"/var/www/cv/application/views/",
+			"/var/www/cv/application/views/beneficiario/",
+			"/var/www/unibh",
+			"/var/www/cv/",
+			"/var/www/unibh/app/views",
+			"/var/www/unibh",
+			"/var/www/unibh/vendor",
+			"/var/www/unibh",
+			"/var/www/cv/laravel",
+			"/var/www/cv/",
+			"/var/www/unibh/",
+			"/var/www/unibh/public",
+			"/var/www/unibh/app",
+			"/var/www/unibh/vendor",
+			"/var/www/unibh/",
+			"/var/www/unibh/application",
+			"/var/www/unibh/public/js",
+			"/var/www/unibh/public",
+			"/var/www/unibh/vendor/gregwar",
+			"/var/www/unibh",
+			"/var/www/cv/application/views"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tipo_orcamento",
+			"table",
+			"NO LOCAL",
+			"getCommand",
+			"getComand",
+			"this->bind",
+			"<\n",
+			"tiposPaga",
+			".confirm-butt",
+			"processor",
+			".\n",
+			"onconfi",
+			"onconfirm",
+			"confirmbutton",
+			"onconfirm",
+			"onConfirm",
+			"onConform",
+			"close",
+			":",
+			"module",
+			":",
+			"Jquery",
+			"html",
+			")\n",
+			"getLiberadoProducao",
+			"getProducao",
+			"'orcamentos'",
+			"['nome' =>",
+			"create",
+			"enviarArquivo",
+			"data_venda@",
+			"data_venda",
+			"dataDB",
+			" '",
+			"set",
+			"acceptedFields",
+			"index",
+			"$namespace",
+			"namespace",
+			"Sorter",
+			"package",
+			"\\n",
+			";\n",
+			"macroCall",
+			"macroable",
+			"query",
+			"Database",
+			"Eloq",
+			"unionOrders",
+			"when",
+			"extend",
+			"registr",
+			"status_",
+			"nome",
+			"numero",
+			"datepi",
+			"liberação",
+			"model",
+			"()];",
+			"format",
+			"nome",
+			"directio",
+			"AclTrait",
+			"<limit",
+			"action",
+			"controller",
+			"foreign",
+			"uf_id",
+			"default",
+			"defaul",
+			"getResponse",
+			"Client",
+			"client",
+			"disableFilters",
+			"filtering",
+			"disableF",
+			"filter",
+			"testin",
+			"auser",
+			"$user",
+			"user",
+			"resolveConnection",
+			"webservice/",
+			"carbon",
+			"carbon\\car",
+			"Carbon",
+			"delete()",
+			" \n",
+			"']);\n",
+			"addReceivers",
+			"orderBy",
+			"dataLi",
+			"StringUtils",
+			"validMac",
+			"login/",
+			"]",
+			"[",
+			"levels",
+			"callMessageB",
+			"    \n",
+			"//$url = sprintf('http://cep.correiocontrol.com.br/%s.json', $cep);",
+			");\n",
+			"    \n",
+			"cep",
+			"**/\n",
+			"statusA",
+			"withPivot",
+			"array_c",
+			"array_co",
+			"[39;49m",
+			"[37;41m",
+			"",
+			"template",
+			"half",
+			"info",
+			"6",
+			"73",
+			"statusLi",
+			"list-chec",
+			"selectable",
+			"checked",
+			"trigger",
+			"list-chec",
+			"$miniI",
+			"mini-image",
+			"imageObject",
+			"editar",
+			"$tr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\n",
+			".min.js",
+			"'$1',",
+			"\"$1\"",
+			",\\n",
+			"#990F20",
+			"#FA1733",
+			"'",
+			"WallaceMaxters\\Time",
+			"!1",
+			"!0",
+			"",
+			"!')",
+			">\n",
+			"}}\n",
+			"ASC",
+			"",
+			"'$1',",
+			"'$1'",
+			",",
+			"",
+			"usuario.",
+			"\"$1\",",
+			"\"$1\"",
+			"wm-btn-green2",
+			"\\n\\n",
+			"        \n",
+			":', ['class' => 'label']) }}",
+			":', ['class' => 'label') }}",
+			"\\n\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/SessionInterface.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Session.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 653.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.css3_validator":
+	{
+		"height": 178.0
+	},
+	"output.csslint_result_view":
+	{
+		"height": 154.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 243.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 122.0
+	},
+	"output.markdown":
+	{
+		"height": 140.0
+	},
+	"output.textarea":
+	{
+		"height": 110.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 110.0
+	},
+	"pinned_build_system": "",
+	"project": "session.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lis",
+				"vendor/phplegends/collections/src/ListCollection.php"
+			],
+			[
+				"colle",
+				"vendor/phplegends/collections/src/Collection.php"
+			],
+			[
+				"deplo",
+				"deploy.php"
+			],
+			[
+				"liberado_rp",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"libera",
+				"resources/views/temp/os/liberacao_financeira.blade.php"
+			],
+			[
+				"temeditar",
+				"resources/views/temp/os/editar.blade.php"
+			],
+			[
+				"temposcriar",
+				"resources/views/temp/os/criar.blade.php"
+			],
+			[
+				"templayout.blade",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"_form.blade",
+				"resources/views/temp/os/_form.blade.php"
+			],
+			[
+				"sistemain",
+				"app/Sistemas/SistemaInterface.php"
+			],
+			[
+				"usuario",
+				"app/Http/Controllers/UsuarioController.php"
+			],
+			[
+				"autcon",
+				"app/Http/Controllers/Auth/AuthController.php"
+			],
+			[
+				"usua",
+				"app/Models/Usuario.php"
+			],
+			[
+				"liberado_rpdo",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"temoscon",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"tem_osdi",
+				"database/migrations/2016_06_13_135314_insert_rotas__temp_os_divergentes.php"
+			],
+			[
+				"divergent",
+				"resources/views/temp/os/divergentes.blade.php"
+			],
+			[
+				"temindex",
+				"resources/views/temp/os/index.blade.php"
+			],
+			[
+				"tempos.php",
+				"app/Models/Temp/Os.php"
+			],
+			[
+				"temposcon",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"tempindex",
+				"resources/views/temp/os/index.blade.php"
+			],
+			[
+				"expedicao.blade",
+				"resources/views/temp/os/expedicao.blade.php"
+			],
+			[
+				"expedicao",
+				"public/js/temp/os/expedicao.js"
+			],
+			[
+				"liberado_produ",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"sort",
+				"dev/_laravel-sorter/src/Sorter.php"
+			],
+			[
+				"htmlbu",
+				"vendor/laravelcollective/html/src/HtmlBuilder.php"
+			],
+			[
+				"sorter",
+				"dev/_laravel-sorter/src/Sorter.php"
+			],
+			[
+				"temlayout",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"impressoa",
+				"resources/views/temp/os/impressao.blade.php"
+			],
+			[
+				"aguardand_im",
+				"resources/views/temp/os/aguardando_impressao.blade.php"
+			],
+			[
+				"liberacai_",
+				"resources/views/temp/os/liberacao_financeira.blade.php"
+			],
+			[
+				"liberado_pro",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"entrege",
+				"resources/views/temp/os/entregues.blade.php"
+			],
+			[
+				"liberado_prod",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"tempossa",
+				"app/Models/Temp/OsStatus.php"
+			],
+			[
+				"diveg",
+				"resources/views/temp/os/divergentes.blade.php"
+			],
+			[
+				"local",
+				"app/Http/local_routes.php"
+			],
+			[
+				"sessio",
+				"config/session.php"
+			],
+			[
+				"confisess",
+				"config/session.php"
+			],
+			[
+				"confi.",
+				"dev/_laravel-sorter/config/config.php"
+			],
+			[
+				"redisdatabase",
+				"vendor/laravel/framework/src/Illuminate/Redis/Database.php"
+			],
+			[
+				"redis.php",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php"
+			],
+			[
+				"redisdata",
+				"dev/_laravel-sorter/vendor/illuminate/contracts/Redis/Database.php"
+			],
+			[
+				"redis",
+				"dev/_laravel-sorter/vendor/illuminate/support/Facades/Redis.php"
+			],
+			[
+				"config/app.php",
+				"config/app.php"
+			],
+			[
+				"sessionmanager",
+				"dev/_laravel-sorter/vendor/illuminate/session/SessionManager.php"
+			],
+			[
+				"session.ph",
+				"dev/_laravel-sorter/vendor/illuminate/support/Facades/Session.php"
+			],
+			[
+				"session",
+				"config/session.php"
+			],
+			[
+				"sess",
+				"config/session.php"
+			],
+			[
+				"entregue",
+				"resources/views/temp/os/entregues.blade.php"
+			],
+			[
+				"liberado_p",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"illuminatedatabasetmigration",
+				"vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php"
+			],
+			[
+				"databasemigrations.php",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php"
+			],
+			[
+				"2016_06_09_174008_alter_table_orcamentos",
+				"database/migrations/2016_06_09_174008_alter_table_orcamentos.php"
+			],
+			[
+				"alter_orca",
+				"database/migrations/2016_06_09_165428_alter_table_orcamento.php"
+			],
+			[
+				"alter_os",
+				"database/migrations/2016_05_24_153907_alter_os.php"
+			],
+			[
+				"schemabuilder",
+				"vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php"
+			],
+			[
+				"schema",
+				"dev/_laravel-sorter/vendor/illuminate/support/Facades/Schema.php"
+			],
+			[
+				"alter_table_or",
+				"database/migrations/2016_06_09_174008_alter_table_orcamentos.php"
+			],
+			[
+				"blueprin",
+				"vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php"
+			],
+			[
+				"2016_06_09_163509_insert_rotas_orcamentos",
+				"database/migrations/2016_06_09_163509_insert_rotas_orcamentos.php"
+			],
+			[
+				"os.php",
+				"app/Models/Temp/Os.php"
+			],
+			[
+				"temposc",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"tipoentrega",
+				"app/Models/TipoEntrega.php"
+			],
+			[
+				"expedicao.js",
+				"public/js/temp/os/expedicao.js"
+			],
+			[
+				"wkhtmltopdf",
+				"vendor/mikehaertl/phpwkhtmltopdf/WkHtmlToPdf.php"
+			],
+			[
+				"layout.blad",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"temp/os",
+				"app/Models/Temp/Os.php"
+			],
+			[
+				"_form_sea",
+				"resources/views/temp/os/_form_search.blade.php"
+			],
+			[
+				"appse",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"tipo",
+				"app/Models/TipoEntrega.php"
+			],
+			[
+				"create_tipo",
+				"database/migrations/2016_06_10_102123_create_table__tipos_entrega.php"
+			],
+			[
+				"insert_tipo",
+				"database/migrations/2016_06_08_100636_insert_tipos_entregas.php"
+			],
+			[
+				"tipoen",
+				"app/Models/TipoEntrega.php"
+			],
+			[
+				"illuminate/validation/validationexception",
+				"vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php"
+			],
+			[
+				"baseexception",
+				"vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php"
+			],
+			[
+				"illuminate/foundation/validation/validationexception",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidationException.php"
+			],
+			[
+				"validatereq",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php"
+			],
+			[
+				"validate",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php"
+			],
+			[
+				"validatetrai",
+				"vendor/laravel/framework/src/Illuminate/Validation/ValidatesWhenResolvedTrait.php"
+			],
+			[
+				"exped",
+				"app/Models/Temp/Expedicao.php"
+			],
+			[
+				"hasone",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php"
+			],
+			[
+				"temposcont",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"wgmmo",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"_botao_mudar_status",
+				"resources/views/temp/os/_botao_mudar_status.blade.php"
+			],
+			[
+				"grupo",
+				"app/Models/Grupo.php"
+			],
+			[
+				"tempos",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"insert-os",
+				"database/migrations/2016_05_25_110848_insert-_os-status.php"
+			],
+			[
+				"temposconrol",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"divergentes",
+				"resources/views/temp/os/divergentes.blade.php"
+			],
+			[
+				"processor",
+				"vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php"
+			],
+			[
+				"databasebuil",
+				"vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php"
+			],
+			[
+				"databuilder",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php"
+			],
+			[
+				"eloqbu",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php"
+			],
+			[
+				"apppro",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"ratelimiter",
+				"vendor/laravel/framework/src/Illuminate/Cache/RateLimiter.php"
+			],
+			[
+				"thort",
+				"dev/_laravel-sorter/vendor/illuminate/routing/Middleware/ThrottleRequests.php"
+			],
+			[
+				"rota",
+				"app/Models/Rota.php"
+			],
+			[
+				"temposco",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"layout",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"temposcontroll",
+				"app/Http/Controllers/Temp/OsController.php"
+			],
+			[
+				"insert-s_sta",
+				"database/migrations/2016_05_25_110848_insert-_os-status.php"
+			],
+			[
+				"liberado_la",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"oscontro",
+				"app/Http/Controllers/OsController.php"
+			],
+			[
+				"liberar",
+				"resources/views/temp/os/liberado_producao.blade.php"
+			],
+			[
+				"layout.bl",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"_botao_",
+				"resources/views/temp/os/_botao_mudar_status.blade.php"
+			],
+			[
+				"osstaus",
+				"app/Models/Temp/OsStatus.php"
+			],
+			[
+				"deply",
+				"deploy.php"
+			],
+			[
+				"insert_prod",
+				"database/migrations/2016_06_08_112342_insert_produtos.php"
+			],
+			[
+				"insert_produ",
+				"database/migrations/2016_06_08_112342_insert_produtos.php"
+			],
+			[
+				"create_log",
+				"database/migrations/2016_05_20_113033_create_logs_lancamentos_table.php"
+			],
+			[
+				"dep",
+				"deploy.php"
+			],
+			[
+				"resources/views/temp/os/layout.blade.php",
+				"resources/views/temp/os/layout.blade.php"
+			],
+			[
+				"database/migrations/2016_06_06_171727_alter_table_cliente.php",
+				"database/migrations/2016_06_06_171727_alter_table_cliente.php"
+			],
+			[
+				"insert",
+				"database/migrations/2016_05_25_110848_insert-_os-status.php"
+			],
+			[
+				"wmg-mo",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"wgmm",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"wgmmoda",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"wgm",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"liberado",
+				"public/js/temp/os/liberado_producao.min.js"
+			],
+			[
+				"wgmmodal",
+				"public/js/wgm-modal.js"
+			],
+			[
+				"wgm-modal.ts",
+				"public/js/wgm-modal.d.ts"
+			],
+			[
+				"modal.ts",
+				"public/js/wgm-modal.d.ts"
+			],
+			[
+				"jquery.js",
+				"public/js/jquery.js"
+			],
+			[
+				"app.js",
+				"public/js/app.js"
+			],
+			[
+				"jquery.ts",
+				"public/js/jquery.ts"
+			],
+			[
+				"wgm-modal",
+				"public/js/wgm-modal.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "una",
+		"selected_items":
+		[
+			[
+				"una",
+				"/var/www/unabh/una-identidade-estudantil.sublime-project"
+			],
+			[
+				"ne",
+				"/var/www/np/newton.sublime-project"
+			],
+			[
+				"np",
+				"/var/www/np/newton.sublime-project"
+			],
+			[
+				"unibh",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"sistem",
+				"/var/www/sistemageral/sistemageral.sublime-project"
+			],
+			[
+				"ht",
+				"/var/www/packages/http2/http2.sublime-project"
+			],
+			[
+				"ma",
+				"/var/www/packages/Maxters/Maxters.sublime-project"
+			],
+			[
+				"htt2",
+				"/var/www/packages/http2/http2.sublime-project"
+			],
+			[
+				"unib",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"view",
+				"/var/www/packages/view/view.sublime-project"
+			],
+			[
+				"uni",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"maxs",
+				"/var/www/packages/Maxters/maxters.sublime-project"
+			],
+			[
+				"un",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"uini",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"new",
+				"/var/www/np/newton.sublime-project"
+			],
+			[
+				"car",
+				"/var/www/cv/cardvantagens.sublime-project"
+			],
+			[
+				"",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"card",
+				"/var/www/cv/cardvantagens.sublime-project"
+			],
+			[
+				"mane",
+				"/var/www/magneti/magneti.sublime-project"
+			],
+			[
+				"com",
+				"/var/www/comau/comau.sublime-project"
+			],
+			[
+				"coma",
+				"/var/www/comau/comau.sublime-project"
+			],
+			[
+				"si",
+				"/var/www/sistmt/sisTMT.sublime-project"
+			],
+			[
+				"collec",
+				"/var/www/packages/collections/collections.sublime-project"
+			],
+			[
+				"slix",
+				"/var/www/lab/silex/silex.sublime-project"
+			],
+			[
+				"sis",
+				"/var/www/sistmt/sisTMT.sublime-project"
+			],
+			[
+				"ua",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"mange",
+				"/var/www/magneti/magneti.sublime-project"
+			],
+			[
+				"unis",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"u",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"una_se",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"unas_",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"uans",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"unase",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"unas",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"colle",
+				"/var/www/packages/collections/collections.sublime-project"
+			],
+			[
+				"mag",
+				"/var/www/magneti/magneti.sublime-project"
+			],
+			[
+				"una_Se",
+				"/var/www/unaselo/una_selo.sublime-project"
+			],
+			[
+				"s",
+				"/var/www/packages/support/support.sublime-project"
+			],
+			[
+				"UNIBH",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"su",
+				"/var/www/packages/support/support.sublime-project"
+			],
+			[
+				"sup",
+				"/var/www/packages/support/support.sublime-project"
+			],
+			[
+				"UNI",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"ale",
+				"/var/www/ale/ale.sublime-project"
+			],
+			[
+				"a",
+				"/var/www/ale/ale.sublime-project"
+			],
+			[
+				"gri",
+				"/var/www/lab/grid/grid.sublime-project"
+			],
+			[
+				"g",
+				"/var/www/lab/grid/grid.sublime-project"
+			],
+			[
+				"grid",
+				"/var/www/lab/grid/grid.sublime-project"
+			],
+			[
+				"form",
+				"/var/www/lab/forms/forms.sublime-project"
+			],
+			[
+				"gru",
+				"/var/www/lab/grid/grid.sublime-project"
+			],
+			[
+				"gr",
+				"/var/www/lab/grid/grid.sublime-project"
+			],
+			[
+				"lege",
+				"/var/www/legendary/legendary.sublime-project"
+			],
+			[
+				"legen",
+				"/var/www/legendary/legendary.sublime-project"
+			],
+			[
+				"lara",
+				"/var/www/laralab/laralab.sublime-project"
+			],
+			[
+				"unio",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			],
+			[
+				"cv",
+				"/var/www/cv/cardvantagens.sublime-project"
+			],
+			[
+				"fiat",
+				"/var/www/fiat/fiat.sublime-project"
+			],
+			[
+				"UNIB",
+				"/var/www/unibh/unibh-identidade-estudantil.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 817.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 169.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
