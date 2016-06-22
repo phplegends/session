@@ -1,5 +1,9 @@
+.buildpath
+.project
+.settings/
 /.phpintel/
 /proposal/
 /vendor/
+composer.lock
 session.sublime-project
 session.sublime-workspace
