@@ -2,37 +2,105 @@
 
 namespace PHPLegends\Session;
 
+use PHPLegends\Session\Engines\EngineInterface;
+
+/**
+ *
+ * @example propostal/example.php
+ * */
+
 interface SessionInterface
 {
-    // public function set($key, $value);
-
-    // public function get($key);
-
-    // public function has($key);
-
-    // public function delete($key);
-
-    public function getId();
-
+    /**
+     *
+     * @param int $id
+     *
+     * */
     public function setId($id);
-    
-    public function regenerate();
-
-    public function destroy();
-
-    public function save();
-
-    public function gc();
-
-    public function setDriver(DriverInterface $driver);
 
     /**
-     * 
-     * @return DriverInterface
+     *
+     * @return int
      * */
-    public function getDriver();
+    public function getId();
 
-    //public function start();
+    /**
+     *
+     * @return void
+     *
+     * */
+    public function regenerate();
 
+    /**
+     * Destroy the session
+     *
+     */
+    public function destroy();
+
+    /**
+     * Sets the driver
+     *
+     * @param EngineInterface $driver
+     * */
+    public function setEngine(EngineInterface $driver);
+
+    /**
+     *
+     * @return EngineInterface
+     * */
+    public function getEngine();
+
+
+    /**
+     * Set's a value in the Session.
+     *
+     * @param string $key
+     * @param mixed $value
+     *
+     * */
+
+    public function set($key, $value);
+
+    /**
+     *
+     * @param string $key
+     * @return mixed
+     * */
+
+    public function get($key);
+
+    /**
+     *
+     * @param string $key
+     * @return mixed
+     * */
+
+    public function delete($key);
+
+    /**
+     * @param string $key
+     * @return boolean
+    */
+    public function has($key);
+
+
+    /**
+     *
+     * @return array
+     * */
+
+    public function all();
+
+    /**
+     *
+     * @param int|string|\DateTime $filetime
+     * */
+    public function setLifetime($lifetime);
+
+    /**
+     * Get the filetime of session
+     * @param int
+     * */
+    public function getLifetime();
 
 }
