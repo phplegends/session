@@ -1,13 +1,22 @@
 <?php
 
 use PHPLegends\Session\Session;
-use PHPLegends\Session\Engines\FileEngine;
+use PHPLegends\Session\Handlers\FileHandler;
 
-class SessionFileEngineTest extends PHPUnit_Framework_TestCase
-{
+class SessionFileHandlerTest extends PHPUnit_Framework_TestCase
+{   
+    public function tearDown()
+    {
+        $this->sess->close();
+        
+        $this->sess = null;
+
+    }
     public function setUp()
     {
-        $this->sess = new Session(new FileEngine(), 'sess_id_1');
+        $this->sess = new Session(new FileHandler(), 'sess_id_1');
+
+        $this->sess->start();
     }
 
     public function testGet()
@@ -32,18 +41,16 @@ class SessionFileEngineTest extends PHPUnit_Framework_TestCase
         }
     }
 
-    public function testGetId()
+    public function testGetName()
     {
-        $this->assertEquals('sess_id_1', $this->sess->getId());
+        $this->assertEquals('sess_id_1', $this->sess->getName());
     }
 
-    public function testGetEngine()
+    public function testGetHandler()
     {
         $this->assertInstanceOf(
-            '\PHPLegends\Session\Engines\EngineInterface',
-            $this->sess->getEngine()
+            '\PHPLegends\Session\Handlers\HandlerInterface',
+            $this->sess->getHandler()
         );
-
-
     }
 }

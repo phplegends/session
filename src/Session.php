@@ -2,20 +2,19 @@
 
 namespace PHPLegends\Session;
 
-use PHPLegends\Session\Engines\EngineInterface;
+use PHPLegends\Session\Handlers\HandlerInterface;
 
 /**
  *
  * @author Wallace de Souza <wallacemaxters@gmail.com>
- *
  */
 class Session implements SessionInterface
 {
 	/**
 	 *
-	 * @var array $data
+	 * @var PHPLegends\Session\Storage
 	 */
-	protected $data = [];
+	protected $storage;
 
 	/**
 	 *
@@ -25,18 +24,56 @@ class Session implements SessionInterface
 
 	/**
 	 *
-	 * @param \PHPLegends\Session\EngineInterface $engine
+	 * @param \PHPLegends\Session\HandlerInterface $Handler
 	 * @param string|int mixed $id
 	 */
-    protected $engine;
+    protected $handler;
 
-    public function __construct(EngineInterface $engine, $id)
-    {
-        $this->setEngine($engine);
+    /**
+     * 
+     * @var boolean
+     * */
+    protected $started = false;
 
-        $this->setId($id);
+    protected $closed = false;
 
-        $this->data = $this->getEngine()->read($id);
+    /**
+     *  @var string
+     * */
+    protected $name;
+
+    /**
+     * @var string
+     * */
+    protected $lifetime;
+
+    /**
+     * 
+     * @param \PHPLegends\Session\Handlers\HandlerInterface $handler
+     * @param string $name
+     * @param Storage|null $storage
+     * */
+    public function __construct(
+        HandlerInterface $handler, $name = 'PHP_LEGENDS_SESS', Storage $storage = null
+    ){
+        $this->setHandler($handler);
+        $this->setName($name);
+        $this->storage = $storage ?: new Storage([]);
+    }
+
+    public function start()
+    {  
+        if ($this->started) {
+            return true;
+        }
+
+        $this->loadIdFromCookie();        
+
+        $items = $this->getHandler()->read($this->getId());
+
+        $this->storage->setItems($items);
+
+        $this->started = true;
     }
 
     /**
@@ -57,6 +94,8 @@ class Session implements SessionInterface
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
     /**
@@ -64,11 +103,11 @@ class Session implements SessionInterface
      * {@inheritDoc}
      * @see \PHPLegends\Session\SessionInterface::regenerate()
      */
-    public function regenerate()
+    public function regenerate($destroy = true)
     {
-        $hash = sha1(time());
+        $id = sha1(time());
 
-        return $this->setId($hash);
+        return $this->setId($id);
     }
 
     /**
@@ -78,14 +117,7 @@ class Session implements SessionInterface
      */
     public function set($key, $value)
     {
-        if ($value instanceof \Closure) {
-
-            throw new \UnexpectedValueException(
-                "Cannot store Closure(Object) in session"
-            );
-        }
-
-        $this->data[$key] = $value;
+        $this->storage->set($key, $value);
 
         return $this;
     }
@@ -97,7 +129,7 @@ class Session implements SessionInterface
      */
     public function get($key, $default = null)
     {
-        return $this->has($key) ? $this->data[$key] : $default;
+        return $this->storage->getOrDefault($key, $default);
     }
 
     /**
@@ -107,59 +139,155 @@ class Session implements SessionInterface
      */
     public function has($key)
     {
-        return isset($this->data[$key]);
+        return $this->storage->has($key);
     }
 
     public function delete($key)
     {
         if (! $this->has($key)) return false;
 
-        $value = $this->get($key);
+        $value = $this->storage->get($key);
 
-        unset($this->data[$key]);
+        unset($this->storage[$key]);
 
         return $value;
     }
 
     /**
-     *
-     * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::setEngine()
-     */
-    public function setEngine(EngineInterface $engine)
+     * Clear the sessions
+     * 
+     * @return self
+     * */
+    public function clear()
     {
-    	$this->engine = $engine;
+        $this->storage->clear();
+
+        return $this;
     }
 
     /**
      *
      * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::getEngine()
+     * @see \PHPLegends\Session\SessionInterface::setHandler()
      */
-    public function getEngine()
+    public function setHandler(HandlerInterface $handler)
     {
-    	return $this->engine;
+    	$this->handler = $handler;
     }
 
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::getHandler()
+     */
+    public function getHandler()
+    {
+    	return $this->handler;
+    }
 
     public function __destruct()
     {
-    	$this->getEngine()->write($this->getId(), $this->all());
+        $this->closed || $this->close();
+    }
+
+    public function close()
+    {
+
+        $id = $this->getId();
+
+        $this->getHandler()->write($id, $this->storage->all());
+
+        setcookie($this->getName(), $id, $this->getLifeTime());
+
+        $this->closed = true;
     }
 
     public function destroy()
     {
     	$id = $this->getId();
 
-    	$this->getEngine()->destroy($id);
+    	$this->getHandler()->destroy($id);
 
-    	$this->setId(null);
+        $this->data = [];
+
+        $this->id =  null;
 
     	return $id;
     }
 
     public function all()
     {
-        return $this->data;
+        return $this->storage->all();
     }
+
+    public function getStorage()
+    {
+        return $this->storage;
+    }
+
+    /**
+     *
+     * @param int|string|\Datetime $lifetime
+     * @return self
+     * */
+    public function setLifeTime($lifetime)
+    {
+        if (is_string($lifetime)) {
+
+            $lifetime = strtotime($lifetime);
+
+        } elseif ($lifetime instanceof \DateTime) {
+
+            $lifetime = $lifetime->format('U');
+
+        } elseif (is_int($lifetime)) {
+
+            $lifetime += time();
+
+        } else {
+
+            throw new \InvalidArgumentException('Invalid argument passed');
+        }
+
+        $this->lifetime = $lifetime;
+
+        return $this;
+    }
+
+    public function getLifeTime()
+    {
+        return $this->lifetime;
+    }
+
+    public function getLifetimeAsDateTime()
+    {
+        return new \DateTime($this->lifetime);
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    protected function generateId()
+    {
+        return md5(uniqid('_sess'));
+    }
+
+    /**
+     * 
+     * @return void
+     * */
+    protected function loadIdFromCookie()
+    {
+        $id = filter_input(INPUT_COOKIE, $this->getName()) ?: $this->generateId();
+
+        $this->setId($id);
+    }
+
 }

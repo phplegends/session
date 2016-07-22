@@ -2,7 +2,7 @@
 
 namespace PHPLegends\Session;
 
-use PHPLegends\Session\Engines\EngineInterface;
+use PHPLegends\Session\Handlers\HandlerInterface;
 
 /**
  *
@@ -11,6 +11,12 @@ use PHPLegends\Session\Engines\EngineInterface;
 
 interface SessionInterface
 {
+
+    /**
+     * @return boolean
+     * */
+    public function start();
+    
     /**
      *
      * @param int $id
@@ -25,11 +31,24 @@ interface SessionInterface
     public function getId();
 
     /**
-     *
-     * @return void
-     *
+     * @param string $name
+     * @return self
      * */
-    public function regenerate();
+    public function setName($name);
+
+    /**
+     * @return string
+     * */
+
+    public function getName();
+
+    /**
+     * Renegerates a session ID
+     *
+     * @param boolean $destroy
+     * @return void
+     * */
+    public function regenerate($destroy = false);
 
     /**
      * Destroy the session
@@ -40,15 +59,15 @@ interface SessionInterface
     /**
      * Sets the driver
      *
-     * @param EngineInterface $driver
+     * @param HandlerInterface $driver
      * */
-    public function setEngine(EngineInterface $driver);
+    public function setHandler(HandlerInterface $driver);
 
     /**
      *
-     * @return EngineInterface
+     * @return HandlerInterface
      * */
-    public function getEngine();
+    public function getHandler();
 
 
     /**
@@ -66,7 +85,6 @@ interface SessionInterface
      * @param string $key
      * @return mixed
      * */
-
     public function get($key);
 
     /**
@@ -82,8 +100,7 @@ interface SessionInterface
      * @return boolean
     */
     public function has($key);
-
-
+    
     /**
      *
      * @return array
@@ -103,4 +120,15 @@ interface SessionInterface
      * */
     public function getLifetime();
 
+    /**
+     * 
+     * @return void
+     * */
+    public function close();
+
+    /**
+     * Clear the session data
+     * 
+     * */
+    public function clear();
 }
