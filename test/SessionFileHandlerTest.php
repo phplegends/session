@@ -7,7 +7,7 @@ class SessionFileHandlerTest extends PHPUnit_Framework_TestCase
 {   
     public function tearDown()
     {
-        $this->sess->close();
+        @$this->sess->close();
         
         $this->sess = null;
 
