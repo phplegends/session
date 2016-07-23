@@ -2,6 +2,7 @@
 
 namespace PHPLegends\Session;
 
+use PHPLegends\Session\SessionInterface;
 use PHPLegends\Session\Handlers\HandlerInterface;
 
 /**
@@ -35,6 +36,10 @@ class Session implements SessionInterface
      * */
     protected $started = false;
 
+    /**
+     * 
+     * @var boolean
+     * */
     protected $closed = false;
 
     /**
@@ -57,33 +62,29 @@ class Session implements SessionInterface
         HandlerInterface $handler, $name = 'PHP_LEGENDS_SESS', Storage $storage = null
     ){
         $this->setHandler($handler);
+
         $this->setName($name);
-        $this->storage = $storage ?: new Storage([]);
-    }
 
-    public function start()
-    {  
-        if ($this->started) {
-            return true;
-        }
-
-        $this->loadIdFromCookie();        
-
-        $items = $this->getHandler()->read($this->getId());
-
-        $this->storage->setItems($items);
-
-        $this->started = true;
+        $this->setStorage($storage ?: new Storage());
     }
 
     /**
-     *
+     * 
      * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::getId()
-     */
-    public function getId()
-    {
-        return $this->id;
+     * @see \PHPLegends\Session\SessionInterface::start()
+     * */
+    public function start()
+    {  
+        if ($this->started) {
+
+            return true;
+        }
+
+        $this->id = filter_input(INPUT_COOKIE, $this->getName());
+
+        $this->storage->setItems($this->read());
+
+        $this->started = true;
     }
 
     /**
@@ -101,13 +102,25 @@ class Session implements SessionInterface
     /**
      *
      * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::getId()
+     */
+    public function getId()
+    {
+        return $this->id ?: $this->regenerate()->id;
+    }
+
+    /**
+     *
+     * {@inheritDoc}
      * @see \PHPLegends\Session\SessionInterface::regenerate()
      */
-    public function regenerate($destroy = true)
+    public function regenerate($destroy = false)
     {
-        $id = sha1(time());
+        $destroy && $this->getHandler()->destroy($this->id);
 
-        return $this->setId($id);
+        $this->id = sha1(uniqid('_sess', true));
+
+        return $this;
     }
 
     /**
@@ -192,12 +205,11 @@ class Session implements SessionInterface
 
     public function close()
     {
+        $this->write();
 
-        $id = $this->getId();
+        setcookie($this->getName(), $this->getId(), time() + $this->lifetime);
 
-        $this->getHandler()->write($id, $this->storage->all());
-
-        setcookie($this->getName(), $id, $this->getLifeTime());
+        $this->getHandler()->gc($this->lifetime);
 
         $this->closed = true;
     }
@@ -208,9 +220,7 @@ class Session implements SessionInterface
 
     	$this->getHandler()->destroy($id);
 
-        $this->data = [];
-
-        $this->id =  null;
+        $this->id = null;
 
     	return $id;
     }
@@ -225,6 +235,13 @@ class Session implements SessionInterface
         return $this->storage;
     }
 
+    public function setStorage(Storage $storage)
+    {
+        $this->storage = $storage;
+
+        return $this;
+    }
+
     /**
      *
      * @param int|string|\Datetime $lifetime
@@ -234,22 +251,22 @@ class Session implements SessionInterface
     {
         if (is_string($lifetime)) {
 
-            $lifetime = strtotime($lifetime);
+            $lifetime = strtotime($lifetime, 0);
 
         } elseif ($lifetime instanceof \DateTime) {
 
-            $lifetime = $lifetime->format('U');
+            $lifetime = $lifetime->format('U') - time();
 
-        } elseif (is_int($lifetime)) {
+        } elseif (! is_int($lifetime)) {
 
-            $lifetime += time();
-
-        } else {
-
-            throw new \InvalidArgumentException('Invalid argument passed');
+            throw new \InvalidArgumentException(
+                'The lifetime argument must be int, time string or DateTime Object'
+            );
         }
 
-        $this->lifetime = $lifetime;
+        // The session lifetime must be greather or equal than 0
+
+        $this->lifetime = max(0, $lifetime);
 
         return $this;
     }
@@ -268,26 +285,29 @@ class Session implements SessionInterface
     {
         $this->name = $name;
     }
-
+     
     public function getName()
     {
         return $this->name;
     }
 
-    protected function generateId()
-    {
-        return md5(uniqid('_sess'));
-    }
-
     /**
+     * Easy way to write data in handler
      * 
      * @return void
      * */
-    protected function loadIdFromCookie()
+    public function write()
     {
-        $id = filter_input(INPUT_COOKIE, $this->getName()) ?: $this->generateId();
-
-        $this->setId($id);
+        return $this->getHandler()->write($this->getId(), $this->storage->all());
     }
 
+    /**
+     * Easy way to retrieve data
+     * 
+     * @return array
+     * */
+    public function read()
+    {
+        return $this->getHandler()->read($this->getId());
+    }
 }
