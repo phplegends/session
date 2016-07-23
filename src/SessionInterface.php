@@ -13,37 +13,47 @@ interface SessionInterface
 {
 
     /**
+     * Starts the session. This method must load session storage data and id.
+     * This method must be initialize just one time
+     * 
      * @return boolean
      * */
     public function start();
     
     /**
      *
+     * Sets the id of the session
+     * 
      * @param int $id
-     *
      * */
     public function setId($id);
 
     /**
-     *
+     * Gets the id of the session
+     * 
      * @return int
      * */
     public function getId();
 
     /**
+     * Sets the session name
+     * 
      * @param string $name
      * @return self
      * */
     public function setName($name);
 
     /**
+     * Gets the session name
+     * 
+     * 
      * @return string
      * */
 
     public function getName();
 
     /**
-     * Renegerates a session ID
+     * Renegerates a session ID. If 
      *
      * @param boolean $destroy
      * @return void
@@ -69,53 +79,15 @@ interface SessionInterface
      * */
     public function getHandler();
 
-
-    /**
-     * Set's a value in the Session.
-     *
-     * @param string $key
-     * @param mixed $value
-     *
-     * */
-
-    public function set($key, $value);
-
     /**
      *
-     * @param string $key
-     * @return mixed
-     * */
-    public function get($key);
-
-    /**
-     *
-     * @param string $key
-     * @return mixed
-     * */
-
-    public function delete($key);
-
-    /**
-     * @param string $key
-     * @return boolean
-    */
-    public function has($key);
-    
-    /**
-     *
-     * @return array
-     * */
-
-    public function all();
-
-    /**
-     *
-     * @param int|string|\DateTime $filetime
+     * @param int|string|\DateTime $lifetime
      * */
     public function setLifetime($lifetime);
 
     /**
-     * Get the filetime of session
+     * Get the lifetime of session
+     * 
      * @param int
      * */
     public function getLifetime();
@@ -127,8 +99,15 @@ interface SessionInterface
     public function close();
 
     /**
-     * Clear the session data
      * 
+     * @return PHPLegends\Session\Storage
      * */
-    public function clear();
+    public function getStorage();
+
+    /**
+     * 
+     * @param PHPLegends\Session\Storage $storage
+     * */
+    public function setStorage(Storage $storage);
+
 }
