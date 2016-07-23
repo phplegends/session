@@ -203,6 +203,11 @@ class Session implements SessionInterface
         $this->closed || $this->close();
     }
 
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::close()
+     */
     public function close()
     {
         $this->write();
@@ -214,6 +219,11 @@ class Session implements SessionInterface
         $this->closed = true;
     }
 
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::destroy()
+     */
     public function destroy()
     {
     	$id = $this->getId();
@@ -230,11 +240,21 @@ class Session implements SessionInterface
         return $this->storage->all();
     }
 
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::getStorage()
+     */
     public function getStorage()
     {
         return $this->storage;
     }
 
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::setStorage()
+     */
     public function setStorage(Storage $storage)
     {
         $this->storage = $storage;
