@@ -13,10 +13,14 @@ class FileHandler implements HandlerInterface
      * @var string
      */
     protected $temporaryDirectory;
+
+    protected $prefix = 'session__';
     
     public function __construct($tempDir = null)
     {
-        $tempDir && $this->setTemporaryDirectory($tempDir);
+        $tempDir ?: $tempDir = sys_get_temp_dir();
+
+        $this->setTemporaryDirectory($tempDir);
     }
 
     /**
@@ -57,11 +61,12 @@ class FileHandler implements HandlerInterface
     {
         $fileIterator = new \FilesystemIterator($this->getTemporaryDirectory());
 
-        $prefix = $this->getTemporaryFilenamePrefix();
+        $prefix = $this->prefix;
 
-        $callback = function (\SplFileInfo $iterator) use($prefix, $lifetime) {
+        $callback = function (\SplFileInfo $it) use ($prefix, $lifetime) {
 
-            return strpos($iterator->getFilename(), $prefix) !== false && $iterator->getMTime() > $lifetime;
+            return strpos($it->getFilename(), $prefix) === 0
+                    && $it->getMTime() + $lifetime < time();
         };
 
         $iterator = new \CallbackFilterIterator($fileIterator, $callback);
@@ -89,7 +94,7 @@ class FileHandler implements HandlerInterface
      */
     public function buildFilename($id)
     {
-        return $this->getTemporaryDirectory() . '/' . 'session__' . $id;
+        return $this->getTemporaryDirectory() . '/' . $this->prefix . $id;
     }
 
     /**
@@ -111,6 +116,6 @@ class FileHandler implements HandlerInterface
      */
     public function getTemporaryDirectory()
     {
-        return $this->temporaryDirectory ?: $this->temporaryDirectory = sys_get_temp_dir();
+        return $this->temporaryDirectory;
     }
 }
