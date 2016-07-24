@@ -252,7 +252,14 @@ class Session implements SessionInterface, \ArrayAccess
     {
         $this->write();
 
-        setcookie($this->getName(), $this->getId(), time() + $this->lifetime);
+        if ($this->lifetime > 0) {
+
+            setcookie($this->getName(), $this->getId(), $this->lifetime + time());
+
+        } else {
+
+            setcookie($this->getName(), $this->getId());
+        }
 
         $this->getHandler()->gc($this->lifetime);
 
