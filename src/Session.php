@@ -2,6 +2,7 @@
 
 namespace PHPLegends\Session;
 
+use PHPLegends\Session\GarbageCollector;
 use PHPLegends\Session\SessionInterface;
 use PHPLegends\Session\Handlers\HandlerInterface;
 
@@ -59,9 +60,22 @@ class Session implements SessionInterface, \ArrayAccess
     protected $name;
 
     /**
-     * @var string
+     * @var int
      * */
     protected $lifetime = 0;
+
+    /**
+     * 
+     * @var int
+     * */
+    protected $maxLifetime = 1440;
+
+    /**
+     * 
+     * @var PHPLegends\Session\GarbageCollector
+     * */
+
+    protected $gc;
 
     /**
      * 
@@ -85,6 +99,8 @@ class Session implements SessionInterface, \ArrayAccess
         $this->setFlashData($flash ?: new FlashData);
 
         $this->start();
+
+        $this->setGarbageCollector(new GarbageCollector());
     }
 
     /**
@@ -261,7 +277,10 @@ class Session implements SessionInterface, \ArrayAccess
             setcookie($this->getName(), $this->getId());
         }
 
-        $this->getHandler()->gc($this->lifetime);
+        if ($this->gc->passes()) {
+
+            $this->getHandler()->gc($this->gc->getMaxLifetime());
+        }
 
         $this->closed = true;
     }
@@ -435,5 +454,17 @@ class Session implements SessionInterface, \ArrayAccess
     public function offsetUnset($key)
     {
         $this->delete($key);
+    }
+
+    public function setGarbageCollector(GarbageCollector $gc)
+    {
+        $this->gc = $gc;
+
+        return $this;
+    }
+
+    public function getGarbageCollector()
+    {
+        return $this->gc;
     }
 }
