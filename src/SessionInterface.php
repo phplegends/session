@@ -3,6 +3,7 @@
 namespace PHPLegends\Session;
 
 use PHPLegends\Session\FlashData;
+use PHPLegends\Session\GarbageCollector;
 use PHPLegends\Session\Handlers\HandlerInterface;
 
 /**
@@ -125,5 +126,19 @@ interface SessionInterface
      * */
     
     public function getFlashData();
+
+    /**
+     * 
+     * @param \PHPLegends\Session\GarbageCollector $gc
+     * @return self
+     * */
+
+    public function setGarbageCollector(GarbageCollector $gc);
+
+    /**
+     * 
+     * @return \PHPLegends\Session\GarbageCollector
+     * */
+    public function getGarbageCollector();
 
 }
