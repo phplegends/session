@@ -2,6 +2,7 @@
 
 namespace PHPLegends\Session;
 
+use PHPLegends\Session\FlashData;
 use PHPLegends\Session\Handlers\HandlerInterface;
 
 /**
@@ -109,5 +110,20 @@ interface SessionInterface
      * @param PHPLegends\Session\Storage $storage
      * */
     public function setStorage(Storage $storage);
+
+
+    /**
+     * 
+     * @param PHPLegends\Session\FlashData
+     * */
+
+    public function setFlashData(FlashData $data);
+
+    /**
+     * 
+     * @return PHPLegends\Session\FlashData
+     * */
+    
+    public function getFlashData();
 
 }

@@ -9,13 +9,24 @@ use PHPLegends\Session\Handlers\HandlerInterface;
  *
  * @author Wallace de Souza <wallacemaxters@gmail.com>
  */
-class Session implements SessionInterface
+class Session implements SessionInterface, \ArrayAccess
 {
+
+    const KEY_STORAGE = 'storage';
+
+    const KEY_FLASH_DATA = 'flash_data';
+
 	/**
 	 *
 	 * @var PHPLegends\Session\Storage
 	 */
 	protected $storage;
+
+    /**
+     * 
+     * @var PHPLegends\Session\FlashData
+     * */
+    protected $flash;
 
 	/**
 	 *
@@ -57,15 +68,23 @@ class Session implements SessionInterface
      * @param \PHPLegends\Session\Handlers\HandlerInterface $handler
      * @param string $name
      * @param Storage|null $storage
+     * @param FlashData|null $flash
      * */
     public function __construct(
-        HandlerInterface $handler, $name = 'PHP_LEGENDS_SESS', Storage $storage = null
+        HandlerInterface $handler,
+        $name = 'PHP_LEGENDS_SESS',
+        Storage $storage = null,
+        FlashData $flash = null
     ){
         $this->setHandler($handler);
 
         $this->setName($name);
 
-        $this->setStorage($storage ?: new Storage());
+        $this->setStorage($storage ?: new Storage);
+
+        $this->setFlashData($flash ?: new FlashData);
+
+        $this->start();
     }
 
     /**
@@ -82,7 +101,7 @@ class Session implements SessionInterface
 
         $this->id = filter_input(INPUT_COOKIE, $this->getName());
 
-        $this->storage->setItems($this->read());
+        $this->read();
 
         $this->started = true;
     }
@@ -123,11 +142,6 @@ class Session implements SessionInterface
         return $this;
     }
 
-    /**
-     *
-     * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::set()
-     */
     public function set($key, $value)
     {
         $this->storage->set($key, $value);
@@ -135,21 +149,11 @@ class Session implements SessionInterface
         return $this;
     }
 
-    /**
-     *
-     * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::get()
-     */
     public function get($key, $default = null)
     {
         return $this->storage->getOrDefault($key, $default);
     }
 
-    /**
-     *
-     * {@inheritDoc}
-     * @see \PHPLegends\Session\SessionInterface::has()
-     */
     public function has($key)
     {
         return $this->storage->has($key);
@@ -167,6 +171,40 @@ class Session implements SessionInterface
     }
 
     /**
+     * 
+     * @param string $key
+     * @return boolean
+     * */
+    public function hasFlash($key)
+    {
+        return $this->flash->has($key);
+    }
+
+    /**
+     * 
+     * @param string $key
+     * @param mixed $default
+     * @return mixed
+     * */
+    public function getFlash($key, $default = null)
+    {
+        return $this->flash->getOrDefault($key, $default);
+    }
+
+    /**
+     * 
+     * @param string $key
+     * @param mixed $value
+     * @return flash
+     * */
+    public function setFlash($key, $value)
+    {
+        $this->flash->set($key, $value);
+
+        return $this;
+    }
+
+    /**
      * Clear the sessions
      * 
      * @return self
@@ -174,6 +212,8 @@ class Session implements SessionInterface
     public function clear()
     {
         $this->storage->clear();
+
+        $this->flash->clear();
 
         return $this;
     }
@@ -264,6 +304,29 @@ class Session implements SessionInterface
 
     /**
      *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::setFlashData()
+     */
+    public function setFlashData(FlashData $flash)
+    {
+        $this->flash = $flash;
+
+        return $this;
+    }
+
+
+    /**
+     *
+     * {@inheritDoc}
+     * @see \PHPLegends\Session\SessionInterface::getFlashData()
+     */
+    public function getFlashData()
+    {
+        return $this->flash;
+    }
+
+    /**
+     *
      * @param int|string|\Datetime $lifetime
      * @return self
      * */
@@ -318,7 +381,12 @@ class Session implements SessionInterface
      * */
     public function write()
     {
-        return $this->getHandler()->write($this->getId(), $this->storage->all());
+        $data = [
+            static::KEY_STORAGE    => $this->storage->all(),
+            static::KEY_FLASH_DATA => $this->flash->all()
+        ];
+
+        return $this->getHandler()->write($this->getId(), $data);
     }
 
     /**
@@ -328,6 +396,37 @@ class Session implements SessionInterface
      * */
     public function read()
     {
-        return $this->getHandler()->read($this->getId());
+        $data = $this->getHandler()->read($this->getId());
+
+        $data += [
+            static::KEY_STORAGE    => [],
+            static::KEY_FLASH_DATA => []
+        ];
+
+        $this->storage->setItems($data[static::KEY_STORAGE]);
+
+        $this->flash->setItems($data[static::KEY_FLASH_DATA]);
+
+        return $data;
+    }
+
+    public function offsetGet($key)
+    {
+        return $this->get($key);
+    }    
+
+    public function offsetSet($key, $value)
+    {
+        $this->set($key, $value);
+    }
+
+    public function offsetExists($key)
+    {
+        return $this->has($key);
+    }
+
+    public function offsetUnset($key)
+    {
+        $this->delete($key);
     }
 }

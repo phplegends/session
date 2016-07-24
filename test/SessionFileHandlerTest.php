@@ -53,4 +53,72 @@ class SessionFileHandlerTest extends PHPUnit_Framework_TestCase
             $this->sess->getHandler()
         );
     }
+
+    public function testArrayAccess()
+    {
+        $this->assertInstanceOf('\ArrayAccess', $this->sess);
+
+        // offsetset
+
+        $this->sess['name'] = 'Wayne';
+
+        //offsetget
+
+        $this->assertEquals('Wayne', $this->sess['name']);
+
+        //offsetexists
+
+        $this->assertTrue(isset($this->sess['name']));
+
+        //offsetunset
+
+        unset($this->sess['name']);
+
+        // offsetexists
+
+        $this->assertFalse(isset($this->sess['name']));
+    }
+
+    public function testHasFlash()
+    {
+        $this->assertFalse(
+            $this->sess->hasFlash('temporary')
+        );
+
+        $this->sess->setFlash('temporary', [1, 2, 3]);
+
+        $this->assertTrue($this->sess->hasFlash('temporary'));
+
+        // after 'get' this is removed
+
+        $this->assertEquals(
+            [1, 2, 3],
+            $this->sess->getFlash('temporary')
+        );
+
+        $this->assertFalse($this->sess->hasFlash('temporary'));
+    }
+
+    public function testGetFlash()
+    {
+        $this->sess->setFlash('temporary', [1, 2, 3]);
+
+        $this->assertEquals([1, 2, 3], $this->sess->getFlash('temporary'));
+
+        $this->assertNull($this->sess->getFlash('temporary'));
+
+        $this->assertEquals(
+            '__default__', $this->sess->getFlash('temporary', '__default__')
+        );
+
+        $this->sess->setFlash('temporary', 5);
+
+        $this->assertEquals(
+            5,
+            $this->sess->getFlashData()->get('temporary')
+        );
+
+        $this->assertNull($this->sess->getFlashData()->get('temporary'));
+    }
+
 }
