@@ -121,4 +121,13 @@ class SessionFileHandlerTest extends PHPUnit_Framework_TestCase
         $this->assertNull($this->sess->getFlashData()->get('temporary'));
     }
 
+
+    public function testGetGarbageCollector()
+    {
+        $this->assertInstanceOf(
+            'PHPLegends\Session\GarbageCollector',
+            $this->sess->getGarbageCollector()
+        );
+    }
+
 }
