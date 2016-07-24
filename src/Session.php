@@ -61,7 +61,7 @@ class Session implements SessionInterface, \ArrayAccess
     /**
      * @var string
      * */
-    protected $lifetime;
+    protected $lifetime = 0;
 
     /**
      * 
