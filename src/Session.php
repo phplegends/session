@@ -5,12 +5,13 @@ namespace PHPLegends\Session;
 use PHPLegends\Session\GarbageCollector;
 use PHPLegends\Session\SessionInterface;
 use PHPLegends\Session\Handlers\HandlerInterface;
+use PHPLegends\Collections\Contracts\Arrayable;
 
 /**
  *
  * @author Wallace de Souza <wallacemaxters@gmail.com>
  */
-class Session implements SessionInterface, \ArrayAccess
+class Session implements SessionInterface, \ArrayAccess, ArrayAble
 {
 
     const KEY_STORAGE = 'storage';
@@ -301,11 +302,6 @@ class Session implements SessionInterface, \ArrayAccess
     	return $id;
     }
 
-    public function all()
-    {
-        return $this->storage->all();
-    }
-
     /**
      *
      * {@inheritDoc}
@@ -462,9 +458,29 @@ class Session implements SessionInterface, \ArrayAccess
 
         return $this;
     }
-
+    
     public function getGarbageCollector()
     {
         return $this->gc;
+    }
+
+    /**
+     * Convert all data of Storage in arrasy
+     * 
+     * @return array
+     * */
+    public function toArray()
+    {
+        return $this->getStorage()->toArray();
+    }
+
+    /**
+     * Get all data of storage
+     * 
+     * @return array
+     * */
+    public function all()
+    {
+        return $this->getStorage()->all();
     }
 }
